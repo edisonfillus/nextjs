@@ -1,7 +1,7 @@
 import {useRouter} from "next/router";
 import Link from "next/link";
 
-export default function () {
+export default function Fruit() {
     const router = useRouter()
     const {name} = router.query
 
