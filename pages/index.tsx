@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Link from "next/link";
 import styles from '../styles/Home.module.scss'
+import {Container} from "@material-ui/core";
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <Container maxWidth="lg">
             <Head>
                 <title>Create Next App</title>
                 <link rel="icon" href="/favicon.ico"/>
@@ -68,6 +69,6 @@ export default function Home() {
                     <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo}/>
                 </a>
             </footer>
-        </div>
+        </Container>
     )
 }
